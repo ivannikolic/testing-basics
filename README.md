@@ -1,9 +1,9 @@
 This is a demo project to show some unit testing basics.
 System does the following:
-1. It gets user's email address from CLI and validates it
-2. It generates chatName out of it
-3. It registers user on the chat
-4. User gets the email with credentials
+* It gets user's email address from CLI and validates it
+* It generates chatName out of it
+* It registers user on the chat
+* User gets the email with credentials
 
 Chat names are generated from email using following rules:
 * Only alphanumeric alphanumeric characters should be used, every other character should be removed
