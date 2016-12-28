@@ -1,6 +1,7 @@
 package rs.atessoft.chat;
 
 import org.apache.commons.lang3.RandomStringUtils;
+import rs.atessoft.api.ChatNameGenerator;
 
 import static rs.atessoft.chat.InvalidChatNameException.Type.*;
 

@@ -1,4 +1,4 @@
-package rs.atessoft.chat;
+package rs.atessoft.api;
 
 /**
  * This service is used to generate chat names out of emails

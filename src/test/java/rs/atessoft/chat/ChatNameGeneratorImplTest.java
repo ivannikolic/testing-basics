@@ -3,6 +3,7 @@ package rs.atessoft.chat;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import rs.atessoft.api.ChatNameGenerator;
 
 import java.util.regex.Pattern;
 
