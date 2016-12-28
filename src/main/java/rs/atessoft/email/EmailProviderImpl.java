@@ -2,6 +2,8 @@ package rs.atessoft.email;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import rs.atessoft.api.EmailProvider;
+import rs.atessoft.api.PasswordGenerator;
+import rs.atessoft.chat.PasswordGeneratorImpl;
 
 import javax.mail.Message;
 import javax.mail.MessagingException;
@@ -22,6 +24,9 @@ public class EmailProviderImpl implements EmailProvider {
     private static final String USERNAME = "ir360stage@gmail.com";
     private static final String PASSWORD = "avexoktssymoxwwg";
 
+    private PasswordGenerator passwordGenerator = new PasswordGeneratorImpl();
+
+
     @Override
     public void sendEmail(String email, String chatName) throws MessagingException {
         Properties props = new Properties();
@@ -40,7 +45,7 @@ public class EmailProviderImpl implements EmailProvider {
         String text = "Hello pilići,"
                 + "\n\nYour are registered to AtesSoft's chat with name: "
                 + "\n" + chatName
-                + "\nYour password is: " + RandomStringUtils.randomAlphanumeric(20)
+                + "\nYour password is: " + passwordGenerator.generateRandomPassword()
                 + "\n\nSincerely yours,"
                 + "\nMarija Zivkovic";
         Message message = new MimeMessage(session);
