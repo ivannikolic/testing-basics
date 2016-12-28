@@ -5,6 +5,8 @@ System does the following:
 * It registers user on the chat
 * User gets the email with credentials
 
+Let's assume implementation for ChatProvider already exists.
+
 Chat names are generated from email using following rules:
 * Only alphanumeric alphanumeric characters should be used, every other character should be removed
 * Chat name should be in lower case
